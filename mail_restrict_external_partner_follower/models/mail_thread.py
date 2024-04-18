@@ -6,7 +6,7 @@ class MailThread(models.AbstractModel):
 
     def _message_subscribe(self, partner_ids=None, subtype_ids=None, customer_ids=None):
         res = super(MailThread, self)._message_subscribe(partner_ids, subtype_ids, customer_ids)
-        if self._name in ('sale.order','account.invoice','account.payment.group','purchase.order'):
+        if self._name in ('sale.order','account.move','account.payment.group','purchase.order'):
             if self.partner_id.id in partner_ids:
                 
                 follower_record = self.env["mail.followers"].search([('res_model', '=', self._name),
