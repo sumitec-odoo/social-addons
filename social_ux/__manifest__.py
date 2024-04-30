@@ -3,9 +3,9 @@
 {
     "name": "social_ux",
     "summary": "",
-    "version": "15.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Social",
-    "website": "https://github.com/juanpgarza/social-addons",
+    "website": "https://github.com/sumitec/social-addons",
     "author": "juanpgarza",
     "license": "AGPL-3",
     "depends": [
@@ -13,7 +13,7 @@
             "mail",
         ],
     "data": [
-            'security/pronto_security.xml',
+            'security/security_data.xml',
         ],
-    "installable": False,
+    "installable": True,
 }
