@@ -15,5 +15,5 @@
     "data": [
             'security/pronto_security.xml',
         ],
-    "installable": True,
+    "installable": False,
 }
